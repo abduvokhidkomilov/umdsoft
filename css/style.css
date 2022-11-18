@@ -152,21 +152,31 @@ main {
 }
 .hero__btns {
     display: flex;
-    gap: 10.9rem;
+    gap: 4.5rem;
 }
 .hero__portfolio {
     font-size: 20px;
-    line-height: 25px;
+    line-height: 2rem;
     color: #FFFFFF;
     background: #DFBB7F;
     border-radius: 8px;
-    padding: 15px 18px;
+    padding: 1rem 1.5rem;
     display: flex;
     align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+.portfolio__btn {
+    color: #FFF;
+    padding: 1rem;
+}
+.portfolio__btn:hover {
+    color: chartreuse;
 }
 .hero__portfolio:hover {
     color: #FEAB38;
     background: transparent;
+    border: 1px dashed chartreuse;
 
 }
 .hero__portfolio:active {
@@ -182,13 +192,17 @@ main {
     border: 1px solid #fff;
     display: flex;
     align-items: center;
+    transition: all 0.5s ease;
 }
 .hero__call a {
     color: #fff;
     padding: 1rem;
 }
+.hero__call:hover {
+    border: 1px dashed chartreuse;
+}
 .hero__call a:hover {
-    color:yellow;
+    color: chartreuse;
 }
 .hero__call:active {
     opacity: 0.5;
@@ -288,6 +302,10 @@ main {
     background-color: rgba(35, 4, 157, 0.03);
     border-radius: 10px;
 }
+
+.community__item:hover {
+    box-shadow: 1px 2px 2px 2px chocolate;
+}
 .community__item-img {
     margin-bottom: 1.5rem;
 
@@ -347,6 +365,11 @@ main {
     line-height: 24px;
     color: #191C2F;
 }
+.our__portfolio:hover {
+    color: coral;
+    box-shadow: 1px 1px 2px 2px blue;
+    border-color:#fff;
+}
 .portfolio__grid {
     display: flex;
     justify-content: center;
@@ -387,6 +410,8 @@ main {
 }
 .portfolio__all a:hover {
     color: red;
+    background: transparent;
+    
 
 }
 .portfolio__all a:active {
@@ -421,6 +446,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+.hamkorlar__item:hover {
+    box-shadow: 1px 1px 2px 2px coral;
 }
 .hamkorlar__img {
 
@@ -510,15 +539,15 @@ main {
     margin-top: 3px;
     width: 37rem;
     height: 5rem;
-    border-radius: 10px;
+    border-radius: 1rem;
     background: #F8F8F8;
     margin-bottom: 3rem;
-    padding: 10px;
+    padding: 1rem;
 }
 label {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
     color: #3A3A3A;
 
 }
@@ -526,9 +555,14 @@ label {
     width: 80rem;
     height: 13rem; 
     margin-bottom: 3rem; 
-    padding: 10px;
-    border-radius: 10px;
+    padding: 1.5rem;
+    border-radius: 1rem;
     background-color:#F8F8F8 ;
+    resize: none
+}
+#number ,#name, #xabar:focus {
+    outline: none;
+
 }
 .sign__input-wrapper_two {
     display: flex;
@@ -549,6 +583,12 @@ label {
     padding: 11px 62px;
     background-color: #DFBB7F;
     border-radius: 10px;
+}
+.sign__btn:hover {
+    background: transparent;
+    border: 1px dashed blue;
+    color: blue;
+    cursor: pointer;
 }
 
 /* footer */
